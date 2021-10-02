@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    
+    justify-content: top;
+    align-items: top;
+    min-height: 100vh;
+    background: #f4f0e1;/* #341b3d*/ /*131313*/
+    
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 5%;
+    overflow: hidden;
+    text-align: center;
+}
+.text{
+    background: #91A88C;
+    border-radius: 0px 40px 0px 40px;
+}
+.text u{
+    text-align: center;
+    animation: animateColor 5s linear infinite;
+}
+@keyframes animateColor
+{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.text h2{
+    position: relative;
+    width: 100%;
+    font-size: 60px;
+    color: #fff;
+    pointer-events: none;
+    white-space: nowrap;
+    text-shadow: calc(var(--x)) 100px 0 rgba(255, 255, 255, 0.1);
+}
+.text h2 span{
+    color: #F74700;/*#B53A25 #F74700*/
+    margin: 0 10px;
+}
+.text h2 span:nth-child(even){
+    background: transparent;
+    -webkit-text-stroke: 2px #fff;
+}
+/*For the cards*/
+.Line1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:1300px) {
+    .Line1{
+      flex-direction: column;
+    }
+  }
+.Container1{
+    position: relative;
+    margin:10px;
+    padding:10px;
+    transform-style: preserve-3d;
+
+}
+
+.Container1 .Card1{
+    border: 5px solid orange;
+    position: relative;
+    width: 385px;
+    height: 385px;
+    background:#2B3531;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.Container1 .Card1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(180px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.Container1 .Colour1::before{
+    background: #DAA520;
+}
+.Container1 .Colour2::before{
+    background: #C0C0C0;
+}
+.Container1 .Colour3::before{
+    background: rgb(177, 103, 30);
+}
+.Container1 .Card1:hover:before{
+    clip-path: circle(250px at 80% -20%);
+}
+.Container1 .Card1 .rank{
+    content: '#1';
+    position: absolute;
+    top: -145%;
+    left: 0%;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.1);
+    visibility: hidden;
+}
+.Container1 .Card1:hover .img1{
+    top: 0%;
+    transform: translateY(0%);
+}
+.Container1 .Card1 .img1{
+    position: absolute;
+    
+    top: 46%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    width: 225px;
+    height: 225px;
+    transition: 0.5s;
+}
+.Container1 .Card1 .Contentbox1{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+    z-index: 10;
+    visibility: hidden;
+}
+.Container1 .Card1:hover .Contentbox1{
+    height: 110px;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.Container1 .Card1:hover .rank{
+    visibility: visible;
+    transition-delay: 0.5s;
+    font-size: 105px;
+    top:-120%;
+}
+.Container1 .Card1:hover .Contentbox1 h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 32px;
+    color: orange;
+}
+.Container1 .Card1 .Contentbox1 .Points span{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 5px;
+    color: whitesmoke;
+}
+/*----------------------------------------*/
+/* Here starts the bottom lined people */ 
+/*----------------------------------------*/
+.Line2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.Container2{
+   
+    position: relative;
+    margin:5px;
+    padding:5px;
+}
+.Container2 .Card4{
+    border: 4px solid #A88771;
+    position: relative;
+    width: 300px;
+    height: 280px;
+    background: #2B3531;
+    border-radius: 40px;
+    overflow: hidden;
+}
+.Container2 .Card4:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f8f6;
+    clip-path: circle(140px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.Container2 .Card4:hover:before{
+    clip-path: circle(180px at 80% -20%);
+}
+.Container2 .Card4:after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 8em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.1);
+}
+.Container2 .Card4:hover .img2{
+    top: -5%;
+    left: 35%;
+    transform: translateY(-3%);
+}
+.Container2 .Card4 .img2{
+    position: absolute;
+    border-radius: 50%;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 225px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.Container2 .Card4 .Contentbox1{
+    position: absolute;
+    bottom: 0;
+    top: 60;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    
+    z-index: 10;
+    visibility: hidden;
+}
+.Container2 .Card4:hover .Contentbox1{
+    height: 110px;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.Container2 .Card4 .rank{
+    content: '#1';
+    position: absolute;
+    top: -145%;
+    left: 0%;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.1);
+    visibility: hidden;
+}
+.Container2 .Card4:hover .rank{
+    visibility: visible;
+    transition-delay: 0.5s;
+    font-size: 50px;
+    top:-25%;
+    left: 3%;
+}
+.Container2 .Card4:hover .Contentbox1 h2{
+    padding-top: 35px;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.Container2 .Card4 .Contentbox1 .Points span{
+    width: 50px;
+    height: 50px;
+    color: whitesmoke;
+    /* text-align: center; */
+    line-height: 25px;
+    margin: 0 5px;
+}
