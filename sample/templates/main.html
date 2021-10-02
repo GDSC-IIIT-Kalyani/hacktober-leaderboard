@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacktoberfest Badges</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ef5940b2a9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img src="	https://hacktoberfest.digitalocean.com/_nuxt/img/H-icon-dark.bff3672.svg"
+                alt=""></label>
+        <ul>
+            <li><a href="/Project.html">Leaderboard</a></li>
+            <li><a href="/main.html">Badges</a></li>
+        </ul>
+    </nav>
+    <div class="mainContainer">
+        <div class="heading">
+            <h1>Hacktoberfest 2021</h1>
+        </div>
+        <div class="activeContest">
+            <h2 style="padding: 10px 25px;">Active Contests</h2>
+        </div>
+        <div class="badgesContainer">
+            <section>
+                <div class="container">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx"><img src="paperVault.png"></div>
+                            <div class="contentBx">
+                                <h3>Paper Vault<br><span>A website that stores previous year question papers and assignments. Also is used for storing data for the gymkhana of IIIT Kalyani</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx"><img src="woc certificate generator.jpg"></div>
+                            <div class="contentBx">
+                                <h3>WOC Certificate Generator<br><span>Python code to generate and store certificates automatically , using names from a csv file</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx"><img src="todo tracker.jpg"></div>
+                            <div class="contentBx">
+                                <h3>The Todo Tracker<br><span>This is some python code which is linked with a bash script which can be executed by just using a keystroke.</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx"><img src="whatsapp filter.png"></div>
+                            <div class="contentBx">
+                                <h3>Whatsapp Filter<br><span>Smart whatsapp with abilities to filter out messages as per users choice of critical words/phrases &...</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx"><img src="Eagle-ai.png"></div>
+                            <div class="contentBx">
+                                <h3>Eagle-Ai-Gui<br><span>GUI is made with tkinter a python based GUI framework</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx"><img src="Placement Portal 1.png"></div>
+                            <div class="contentBx">
+                                <h3>Placement Portal<br><span>IIIT Kalyani Placement Portal</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+    <script src="vanilla.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 30,
+		speed: 50
+	    });
+    </script>
+</body>
+
+</html>

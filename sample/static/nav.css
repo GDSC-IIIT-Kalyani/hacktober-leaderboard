@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    background: #A88771;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+label.logo{
+    padding: 0 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #0e0807;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+a.active,a:hover{
+    background: #91A88C;
+    color: #2B3531;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #2B3531;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 25px;
+        padding-left: 30px;
+
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 355px){
+    label.logo{
+        font-size: 18px;
+        /* padding-left: 10px; */
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #91A88C;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #2B3531;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+img{
+    width: 64px;
+    height: 64px;
+    margin-top: 7px;
+    cursor: pointer;
+    background-color: #B53A25;
+}
+
+.heading{
+    /* margin: auto; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 8px; */
+    padding: 8px;
+}
