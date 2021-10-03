@@ -14,60 +14,69 @@
         </div>
     </section>
     <div class="Line1">
+
+        {% block content %}
+        {%
+        for x in data["record"][:3]:
+
+        %}
+
         <div class="Container1">
             <div class="Card1 Colour1">
                 <div class="img1">
-                    <img src="../img/thor.jpg" cursor="pointer" style="border-radius: 25px;">
+                    <img src={{x.profileLink}} cursor="pointer" style="border-radius: 25px;">
                 </div>
                 <div class="Contentbox1">
-                    <h2 class="merit_name" id="jeet">Participant 1</h2>
+                    <h2 class="merit_name" id="jeet">{{x.username}} 1</h2>
                     <div class="rank">
-                        <span class="merit_rank">#1</span>
+                        <span class="merit_rank">{{x.rank}}</span>
                     </div>
                     <div class="Points">
-                        <span class="merit_points">Points : 100</span>
+                        <span class="merit_points">{{x.points}}</span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="Container1">
-            <div class="Card1 Colour2">
-                <div class="img1">
-                    <img id = "sri" src="../img/thor.jpg" cursor="pointer" style="border-radius: 25px;">
-                </div>
-                <div class="Contentbox1">
-                    <h2 class="merit_name" id="sss">Participant 2</h2>
-                    <div class="rank">
-                        <span class="merit_rank">#2</span>
-                    </div>
-                    <div class="Points">
-                        <span class="merit_points">Points : 90</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="Container1">
-            <div class="Card1 Colour3">
-                <div class="img1">
-                    <img src="../img/thor.jpg" cursor="pointer" style="border-radius: 25px;">
-                </div>
-                <div class="Contentbox1">
-                    <h2 class="merit_name">Participant 3</h2>
-                    <div class="rank">
-                        <span class="merit_rank">#3</span>
-                    </div>
-                    <div class="Points" >
-                        <span class="merit_points">Points : 85</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    <div class="Line2">
+        {% endfor %}
         
+
     </div>
-    <script src="../static/script.js"></script>
+
+    <div class="Line2">
+
+
+        {%
+        for x in data["record"][3:]:
+
+        %}
+
+        <div class="Container2">
+            <div class="Card4">
+                <div class="img2">
+                    <img src={{x.profileLink}} cursor="pointer">
+                </div>
+                <div class="Contentbox1">
+                    <h2 class="name">{{x.name}}</h2>
+                    <div class="rank">
+                        <span>{{x.rank}}</span>
+                    </div>
+                    <div class="Points">
+                        <span class="spoint">{{x.points}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        {% endblock %}
+
+    </div>
+
+    <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script> -->
+    <!-- <script src="../static/script.js"></script> -->
+
+
+
+
 </body>
 
 </html>
