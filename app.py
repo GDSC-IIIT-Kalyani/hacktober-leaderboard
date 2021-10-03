@@ -16,11 +16,7 @@ app = Flask(__name__)
 dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20}
 dict1={}
 def func():
-<<<<<<< HEAD
     g = Github("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")
-=======
-    g = Github("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")
->>>>>>> 81d93a1b492b272686689accdca3edd80eed48df
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
