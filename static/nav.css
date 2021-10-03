@@ -76,7 +76,6 @@ a.active,a:hover{
 @media (max-width: 355px){
     label.logo{
         font-size: 18px;
-        /* padding-left: 10px; */
     }
 }
 
@@ -116,15 +115,12 @@ img{
     height: 64px;
     margin-top: 7px;
     cursor: pointer;
-    background-color: #B53A25;
 }
 
 .heading{
-    /* margin: auto; */
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 8px; */
     padding: 8px;
 }
