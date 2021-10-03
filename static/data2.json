@@ -1,5 +1,5 @@
 {
-    "record": [
+    "records": [
         {
             "rank": 1,
             "username": "Sukhpreet Singh",
@@ -32,24 +32,18 @@
         },
         {
             "rank": 6,
-            "username": null,
-            "points": 0,
-            "profileLink": "https://github.com/chrisyo99.png"
-        },
-        {
-            "rank": 7,
             "username": "Abhishek Seth",
             "points": 0,
             "profileLink": "https://github.com/abs12seth.png"
         },
         {
-            "rank": 8,
+            "rank": 7,
             "username": "Luke Rose",
             "points": 0,
             "profileLink": "https://github.com/MrLukeKR.png"
         },
         {
-            "rank": 9,
+            "rank": 8,
             "username": "itsMeHrithik",
             "points": 0,
             "profileLink": "https://github.com/ItsMeHrithik.png"
