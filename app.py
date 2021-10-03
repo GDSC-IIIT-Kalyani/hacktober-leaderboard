@@ -1,14 +1,22 @@
-from flask import Flask, render_template
+import os
+import json
+from github import Github#entering into github
+import operator
+from flask import Flask, render_template, send_from_directory
+
+SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
+
+json_url = os.path.join(SITE_ROOT, 'static', 'data.json')
+data = json.load(open(json_url))
+# print(data)
+
 
 app = Flask(__name__)
 
-from github import Github#entering into github
-import operator
-import json
 dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20}
 dict1={}
 def func():
-    g = Github("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")
+    g = Github("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")
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
@@ -52,12 +60,15 @@ def start():
 
 @app.route("/leaderboard") #leaderboard
 def hello_world():
-    return render_template("leaderboard.html")
+    return render_template("leaderboard.html", data = data)
     
 @app.route("/projects")
 def hello_projec():
     return render_template("projects.html")
     
+# @app.route("/static/data.json")
+# def static_dir(path):
+#     return send_from_directory("static", path)
     
 # python code goes here
 # json file savedd in ../static/data.json
