@@ -69,6 +69,7 @@ section{
 
 .Container1 .Card1{
     border: 5px solid orange;
+    object-fit: fill;
     position: relative;
     width: 385px;
     height: 385px;
