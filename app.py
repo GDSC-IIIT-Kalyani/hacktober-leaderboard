@@ -16,7 +16,7 @@ app = Flask(__name__)
 dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20}
 dict1={}
 def func():
-    g = Github("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")
+    g = Github("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")
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
