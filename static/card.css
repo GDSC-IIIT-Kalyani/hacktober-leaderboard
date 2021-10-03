@@ -121,15 +121,14 @@ section::after{
     font-size: 18px;
     font-weight: 300;
     text-transform: initial;
-    /* text-align: center; */
     display: flex;
     text-align: center;
-    /* justify-content: center; */
-    /* align-items: center; */
-
 }
 
 h3{
     text-align: center;
-    /* text-decoration: underline 2px solid black; */
+}
+
+a{
+    color: inherit;
 }
