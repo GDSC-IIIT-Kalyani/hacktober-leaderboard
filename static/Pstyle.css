@@ -27,17 +27,9 @@ section{
 }
 .text u{
     text-align: center;
-    /* animation: animateColor 5s linear infinite; */
+   
 }
-@keyframes animateColor
-{
-    0%{
-        filter: hue-rotate(0deg);
-    }
-    100%{
-        filter: hue-rotate(360deg);
-    }
-}
+
 .text h2{
     position: relative;
     width: 100%;
