@@ -8,7 +8,7 @@ import json
 dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20}
 dict1={}
 def func():
-    g = Github("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")
+    g = Github("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")
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
