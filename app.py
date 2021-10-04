@@ -40,7 +40,7 @@ def func():
     rank = 1
     file = open("static/data2.json", "w")
     for key, value in dict3.items():
-        if(value[1]==1):
+        if((value[1]==1) and (value[0]!=0)):
             user["rank"]=rank
             user["username"]=key
             user["points"]=value[0]
