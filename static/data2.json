@@ -32,18 +32,24 @@
         },
         {
             "rank": 6,
+            "username": null,
+            "points": 0,
+            "profileLink": "https://github.com/chrisyo99.png"
+        },
+        {
+            "rank": 7,
             "username": "Abhishek Seth",
             "points": 0,
             "profileLink": "https://github.com/abs12seth.png"
         },
         {
-            "rank": 7,
+            "rank": 8,
             "username": "Luke Rose",
             "points": 0,
             "profileLink": "https://github.com/MrLukeKR.png"
         },
         {
-            "rank": 8,
+            "rank": 9,
             "username": "itsMeHrithik",
             "points": 0,
             "profileLink": "https://github.com/ItsMeHrithik.png"
