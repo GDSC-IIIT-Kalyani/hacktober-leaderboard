@@ -1,7 +1,7 @@
-import os
-import json
-from github import Github#entering into github
-import operator
+import dotenv
+from dotenv import load_dotenv
+import os, json, operator
+from github import Github  # entering into github
 from flask import Flask, render_template, send_from_directory
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
@@ -9,14 +9,14 @@ SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 json_url = os.path.join(SITE_ROOT, 'static', 'data.json')
 data = json.load(open(json_url))
 # print(data)
-
+load_dotenv()  # Loads environment variables from .env file if one is present
 
 app = Flask(__name__)
 
-dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20}
-dict1={}
+dict2 = {"level-1" : 5, "level-2": 10, "level-3": 20}
+dict1 = {}
 def func():
-    g = Github("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")
+    g = Github(os.getenv("GITHUB_TOKEN"))  # Get GitHub token from environment file
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
@@ -40,7 +40,7 @@ def func():
     rank = 1
     file = open("static/data2.json", "w")
     for key, value in dict3.items():
-        if(value[1]==1):
+        if((value[1]==1) and (value[0]!=0)):
             user["rank"]=rank
             user["username"]=key
             user["points"]=value[0]
