@@ -12,7 +12,7 @@ app = Flask(__name__)
 dict2 = {"level-1" : 5, "level-2": 10, "level-3": 20}
 dict1 = {}
 def func():
-    g = Github("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")  # Get GitHub token from environment file
+    g = Github("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")  # Get GitHub token from environment file
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
