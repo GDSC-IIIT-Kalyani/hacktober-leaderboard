@@ -4,7 +4,7 @@ from flask import Flask, render_template, send_from_directory
 
 SITE_ROOT = os.path.realpath(os.path.dirname(__file__))
 
-json_url = os.path.join(SITE_ROOT, 'static', 'data.json')
+json_url = os.path.join(SITE_ROOT, 'static', 'data2.json')
 data = json.load(open(json_url))
 # print(data)
 app = Flask(__name__)
@@ -12,11 +12,15 @@ app = Flask(__name__)
 dict2 = {"level-1" : 5, "level-2": 10, "level-3": 20}
 dict1 = {}
 def func():
+<<<<<<< HEAD
+    g = Github("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")  # Get GitHub token from environment file
+=======
     g = Github("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")  # Get GitHub token from environment file
+>>>>>>> 0c7296682bee8809657cc5322c88bcb63edb5e37
     topic = 'hacktoberfest'
     ORGANIZATION = 'GDSC-IIIT-Kalyani'
 
-    repos = g.search_repositories(query=f'topic:{topic} org:{ORGANIZATION}')
+    repos = g.search_repositories(query=f' org:{ORGANIZATION} topic:{topic}')
     for repo in repos:
         pull = repo.get_pulls(state='closed', sort='created', base='main')
         for pr in pull:
