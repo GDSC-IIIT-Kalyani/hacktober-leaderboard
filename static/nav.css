@@ -43,7 +43,7 @@ nav ul li a{
 }
 
 a.active,a:hover{
-    background: #91A88C;
+    /* background: #91A88C; */
     color: #2B3531;
     transition: .5s;
 }

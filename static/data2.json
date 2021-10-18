@@ -2,24 +2,18 @@
     "records": [
         {
             "rank": 1,
-            "username": null,
-            "points": 10,
-            "profileLink": "https://github.com/sabyasachi-894.png"
-        },
-        {
-            "rank": 2,
             "username": "Karl Mathias Moberg",
             "points": 10,
             "profileLink": "https://github.com/kmoberg.png"
         },
         {
-            "rank": 3,
+            "rank": 2,
             "username": "Anmol Srivastava",
             "points": 10,
             "profileLink": "https://github.com/Anmol376OP.png"
         },
         {
-            "rank": 4,
+            "rank": 3,
             "username": "Eddie Thokerunga",
             "points": 5,
             "profileLink": "https://github.com/Eddievin.png"
