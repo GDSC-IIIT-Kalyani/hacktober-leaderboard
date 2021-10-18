@@ -6,19 +6,23 @@
 
 <head>
     <link rel="stylesheet" href="../static/Pstyle.css">
+    <script src="https://kit.fontawesome.com/ef5940b2a9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <section>
-        <div class="text">
-            <h2><span><b><i><u>LEADERBOARD</u></i></b></span></h2>
-        </div>
-    </section>
+    
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+            </ul>
+        </nav>
+        <section></section>
     <div class="Line1">
 
         {% block content %}
         {%
-        for x in data["record"][:3]:
+        for x in data["records"][:3]:
 
         %}
 
@@ -28,9 +32,9 @@
                     <img src={{x.profileLink}} cursor="pointer" style="border-radius: 25px; width: 250px;">
                 </div>
                 <div class="Contentbox1">
-                    <h2 class="merit_name" id="jeet">{{x.username}} 1</h2>
+                    <h2 class="merit_name" id="jeet">{{x.username}}</h2>
                     <div class="rank">
-                        <span class="merit_rank">{{x.rank}}</span>
+                        <span class="merit_rank">#{{x.rank}}</span>
                     </div>
                     <div class="Points">
                         <span class="merit_points">{{x.points}}</span>
@@ -47,7 +51,7 @@
 
 
         {%
-        for x in data["record"][3:]:
+        for x in data["records"][3:]:
 
         %}
 
@@ -57,9 +61,9 @@
                     <img src={{x.profileLink}} cursor="pointer" style="width: 225px;">
                 </div>
                 <div class="Contentbox1">
-                    <h2 class="name">{{x.name}}</h2>
+                    <h2 class="name">{{x.username}}</h2>
                     <div class="rank">
-                        <span>{{x.rank}}</span>
+                        <span>#{{x.rank}}</span>
                     </div>
                     <div class="Points">
                         <span class="spoint">{{x.points}}</span>

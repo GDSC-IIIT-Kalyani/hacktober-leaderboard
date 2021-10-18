@@ -14,6 +14,40 @@ body{
     background: #f4f0e1;/* #341b3d*/ /*131313*/
     
 }
+nav{
+    background: #A88771;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #0e0807;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-weight: 800;
+}
+
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
 section{
     position: relative;
     width: 100%;
@@ -53,6 +87,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding-top: 75px;
 }
 @media (max-width:1300px) {
     .Line1{

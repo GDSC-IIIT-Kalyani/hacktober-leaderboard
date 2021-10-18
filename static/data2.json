@@ -8,15 +8,15 @@
         },
         {
             "rank": 2,
-            "username": "Anmol Srivastava",
-            "points": 10,
-            "profileLink": "https://github.com/Anmol376OP.png"
-        },
-        {
-            "rank": 3,
             "username": "Eddie Thokerunga",
             "points": 5,
             "profileLink": "https://github.com/Eddievin.png"
+        },
+        {
+            "rank": 3,
+            "username": "Anmol Srivastava",
+            "points": 5,
+            "profileLink": "https://github.com/Anmol376OP.png"
         }
     ]
 }
