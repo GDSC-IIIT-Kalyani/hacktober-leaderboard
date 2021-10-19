@@ -2,6 +2,7 @@
     "records": [
         {
             "rank": 1,
+<<<<<<< HEAD
             "username": "Jatin Verma",
             "points": 95,
             "profileLink": "https://github.com/jatinverma14.png"
@@ -38,11 +39,14 @@
         },
         {
             "rank": 7,
+=======
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
             "username": "SABYASACHI PAUL",
             "points": 10,
             "profileLink": "https://github.com/sabyasachi-894.png"
         },
         {
+<<<<<<< HEAD
             "rank": 8,
             "username": "Shubham Kumar",
             "points": 10,
@@ -50,11 +54,15 @@
         },
         {
             "rank": 9,
+=======
+            "rank": 2,
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
             "username": "Karl Mathias Moberg",
             "points": 10,
             "profileLink": "https://github.com/kmoberg.png"
         },
         {
+<<<<<<< HEAD
             "rank": 10,
             "username": "Anuj Kirodia",
             "points": 10,
@@ -98,6 +106,9 @@
         },
         {
             "rank": 17,
+=======
+            "rank": 3,
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
             "username": "Eddie Thokerunga",
             "points": 5,
             "profileLink": "https://github.com/Eddievin.png"
@@ -106,6 +117,7 @@
             "rank": 18,
             "username": "Dakota Brown",
             "points": 5,
+<<<<<<< HEAD
             "profileLink": "https://github.com/DKBoston15.png"
         },
         {
@@ -113,6 +125,9 @@
             "username": "STAR SIWACH",
             "points": 5,
             "profileLink": "https://github.com/Ashwani132003.png"
+=======
+            "profileLink": "https://github.com/Anmol376OP.png"
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
         }
     ]
 }
