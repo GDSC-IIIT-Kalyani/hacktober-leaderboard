@@ -2,7 +2,7 @@
 <html>
 
 <title>Leaderboard</title>
-<link rel="shortcut icon" type="image/jpg" href="../img/gdsc.png"/>
+<link rel="shortcut icon" type="image/jpg" href="../img/gdsc.png" />
 
 <head>
     <link rel="stylesheet" href="../static/Pstyle.css">
@@ -14,31 +14,35 @@
 </head>
 
 <body>
-    
+
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo"><img class="bot" src="https://github.com/Anmol376OP/hacktober-leaderboard/blob/main/img/gdsc.png?raw=true"alt=""></label>
+        <label class="logo">
+            <a href="/">
+                <img class="bot"
+                    src="https://github.com/Anmol376OP/hacktober-leaderboard/blob/main/img/gdsc.png?raw=true"
+                    alt=""></label>
+        </a>
         <ul>
             <li><a href="/">HOME</a></li>
             <li><a href="/projects">PROJECTS</a></li>
         </ul>
     </nav>
-        <section></section>
+    <section></section>
     <div class="Line1">
 
         {% block content %}
         {%
         for x in data["records"][:3]:
-
         %}
 
         <div class="Container1">
             <div class="Card1 Colour1">
                 <div class="img1">
-                    <img src={{x.profileLink}} cursor="pointer" style="border-radius: 25px; width: 250px;">
+                    <a href={{x.profile}}><img src={{x.profileLink}} style="border-radius: 25px; width: 250px;"></a>
                 </div>
                 <div class="Contentbox1">
                     <h2 class="merit_name" id="jeet">{{x.username}}</h2>
@@ -52,8 +56,6 @@
             </div>
         </div>
         {% endfor %}
-        
-
     </div>
 
     <div class="Line2">
@@ -67,7 +69,7 @@
         <div class="Container2">
             <div class="Card4">
                 <div class="img2">
-                    <img src={{x.profileLink}} cursor="pointer" style="width: 225px;">
+                    <a href={{x.profile}}><img src={{x.profileLink}} style="width: 225px;"></a>
                 </div>
                 <div class="Contentbox1">
                     <h2 class="name">{{x.username}}</h2>
@@ -81,15 +83,9 @@
             </div>
         </div>
         {% endfor %}
-        {% endblock %}
 
     </div>
-
-    <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script> -->
-    <!-- <script src="../static/script.js"></script> -->
-
-
-
+    {% endblock %}
 
 </body>
 

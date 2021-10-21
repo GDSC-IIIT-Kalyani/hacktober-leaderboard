@@ -8,7 +8,7 @@ Create a new virtual environment so that you only install the dependencies that 
 
 - `python3 -m venv venv`
 - `source venv/bin/activate`
-- `pip install flask`
+- `pip install -r requirements.txt`
 - `flask run`
 
 # Basic git functionalities 🔩
