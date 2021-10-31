@@ -1,29 +1,75 @@
 <html>
-    <head>
-        <title>
-            Hacktoberfest Reloading
-        </title>
-        <link rel="shortcut icon" type="image/jpg" href="../img/gdsc.png"/>
-        <style>
-            .button2{ background-color: #2B3531 ; /* Green */
-  border: none;
-  border-radius: 5%;
-  color: white;
-  padding: 15px 32px;
-  margin: 5%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;}
-            .button2:hover {
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); cursor: pointer;
-}
-        </style>
-    </head>
-    <body>
-        <center><img src="https://hacktoberfest.digitalocean.com/_nuxt/img/H-icon-dark.bff3672.svg"</center>
-        <h1> Google Developer Student Club @ IIIT Kalyani</h1>
-        <a href ='/projects'><button class = "button2">Projects</button></a>
-        <a href="/leaderboard"><button class = "button2" href="/leaderboard">Leaderboard</button></a>
-    </body>
+
+<head>
+    <title>Hacktoberfest Leaderboard</title>
+    <link rel="shortcut icon" type="image/jpg" href="../img/gdsc.png" />
+    <style>
+        /* .logo {
+            height: 25px;
+            line-height: 25px;
+            vertical-align: middle;
+        } */
+        
+        .button2 {
+            background-color: #2b3531;
+            /* Green */
+            border: none;
+            border-radius: 5%;
+            color: white;
+            padding: 15px 32px;
+            margin: 1%;
+            vertical-align: top;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .rotate180 {
+            -webkit-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+        
+        .button2:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="background-color:#2b3531;color:white;padding:9px;">
+        <center>
+            <h1>Hacktoberfest 2021</h1>
+        </center>
+    </div>
+
+    <div style="background-color:#f54700;color:white;padding:20px;">
+        <center><img src="https://hacktoberfest.digitalocean.com/_nuxt/img/H-icon-dark.bff3672.svg" ; height="400px" ; width="400px"></center>
+        <center>
+            <h1>Google Developer Student Clubs</h1>
+            <h1>Indian Institute of Information Technology Kalyani</h1>
+        </center>
+
+        <center>
+            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px">
+            <a href="/leaderboard"><button class = "button2" href="/leaderboard" vertical-align="center">Leaderboard</button></a>
+            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px" ; class="rotate180">
+            <br>
+            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px">
+            <a href='/projects'><button class = "button2">Projects</button></a>
+            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px" ; class="rotate180">
+        </center>
+    </div>
+
+    <div style="background-color:#2b3531;color:white;padding:0px;"></div>
+
+
+</body>
+
 </html>
