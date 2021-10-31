@@ -13,10 +13,10 @@ dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20, "Level-1" : 5, "Level-2":
 dict1={}
 def func():
     g = Github("github_token")
-    # topic = 'hacktoberfest'
-    # ORGANIZATION = 'GDSC-IIIT-Kalyani'
+   
     org = g.get_organization("GDSC-IIIT-Kalyani")
     org.login
+    #adding the required repos under Hacktoberfest
     repos=[]
     repos.append(g.get_repo("GDSC-IIIT-Kalyani/Winter-of-Code-2.0-frontend"))
     repos.append(g.get_repo("GDSC-IIIT-Kalyani/ENCODN"))
@@ -35,7 +35,6 @@ def func():
     repos.append(g.get_repo("GDSC-IIIT-Kalyani/Tic-Tac-Toe"))
     repos.append(g.get_repo("GDSC-IIIT-Kalyani/flutter-url-launcher"))
 
-    #repos = g.search_repositories(query=f'topic:{topic} org:{ORGANIZATION}')
     for repo in repos:
         print(repo.name)
         print("\n")
