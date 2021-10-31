@@ -13,10 +13,29 @@ dict2 = {"level-1" : 5, "level-2": 10, "level-3" : 20, "Level-1" : 5, "Level-2":
 dict1={}
 def func():
     g = Github("github_token")
-    topic = 'hacktoberfest'
-    ORGANIZATION = 'GDSC-IIIT-Kalyani'
+    # topic = 'hacktoberfest'
+    # ORGANIZATION = 'GDSC-IIIT-Kalyani'
+    org = g.get_organization("GDSC-IIIT-Kalyani")
+    org.login
+    repos=[]
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/Winter-of-Code-2.0-frontend"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/ENCODN"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/winter-of-code"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/placement-portal"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/Pandemic-Simulator"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/FUSION_VAE_DSC"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/todo-tracker"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/Eagle-AI-GUI"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/Space-Invaders"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/Paint"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/playground"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/PaperVault"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/hacktober-leaderboard"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/Tic-Tac-Toe"))
+    repos.append(g.get_repo("GDSC-IIIT-Kalyani/flutter-url-launcher"))
 
-    repos = g.search_repositories(query=f'topic:{topic} org:{ORGANIZATION}')
+    #repos = g.search_repositories(query=f'topic:{topic} org:{ORGANIZATION}')
     for repo in repos:
         print(repo.name)
         print("\n")
