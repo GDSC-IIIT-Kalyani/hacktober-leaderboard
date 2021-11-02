@@ -47,6 +47,20 @@ def func():
                         dict1[pr.user.name][1]=1
                     elif(str(label.name)== "level-1" or str(label.name)== "level-2" or str(label.name)== "level-3" or str(label.name)== "Level-1" or str(label.name)== "Level-2" or str(label.name)== "Level-3"):
                         dict1[pr.user.name][0]+=dict2[label.name]
+            elif pr.user.login in dict1.keys():
+                for label in pr.get_labels():
+                    if(str(label.name)=="hacktoberfest-accepted"):
+                        dict1[pr.user.login][1]=1
+                    elif(str(label.name)== "level-1" or str(label.name)== "level-2" or str(label.name)== "level-3" or str(label.name)== "Level-1" or str(label.name)== "Level-2" or str(label.name)== "Level-3"):
+                        dict1[pr.user.login][0]+=dict2[label.name]
+            elif pr.user.name==None:
+                dict1[pr.user.login]=[0,0,"https://github.com/"+pr.user.login+".png"]
+                for label in pr.get_labels():
+                    if(str(label.name)=="hacktoberfest-accepted"):
+                        dict1[pr.user.login][1]=1
+                    elif(str(label.name)== "level-1" or str(label.name)== "level-2" or str(label.name)== "level-3" or str(label.name)== "Level-1" or str(label.name)== "Level-2" or str(label.name)== "Level-3"):
+                        dict1[pr.user.login][0]+=dict2[label.name]
+
             else:        
                 dict1[pr.user.name]=[0,0,"https://github.com/"+pr.user.login+".png"]
                 for label in pr.get_labels():
