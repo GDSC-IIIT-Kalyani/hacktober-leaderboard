@@ -1,96 +1,23 @@
 <!DOCTYPE html>
 <html>
-
-<title>Leaderboard</title>
-<link rel="shortcut icon" type="image/jpg" href="../img/gdsc.png"/>
-
-<head>
-    <link rel="stylesheet" href="../static/Pstyle.css">
-    <!-- <script src="https://kit.fontawesome.com/ef5940b2a9.js" crossorigin="anonymous"></script> -->
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ef5940b2a9.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-    
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo"><img class="bot" src="https://github.com/Anmol376OP/hacktober-leaderboard/blob/main/img/gdsc.png?raw=true"alt=""></label>
-        <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/projects">PROJECTS</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/static/style.css" rel="stylesheet" />
+    <style>
+      /* * {
+        outline: 1px solid red;
+        outline-offset: -1px;
+      } */
+    </style>
+  </head>
+  <body class="bg-[#170F1E]">
+    <nav class="navbar sticky overflow-y-hidden h-4 w-screen mx-0 pl-0">
+      <h1
+        class="text-white whitespace-nowrap overflow-x-hidden text-xs rbinary opacity-20"
+      ></h1>
     </nav>
-        <section></section>
-    <div class="Line1">
-
-        {% block content %}
-        {%
-        for x in data["records"][:3]:
-
-        %}
-
-        <div class="Container1">
-            <div class="Card1 Colour1">
-                <div class="img1">
-                    <img src={{x.profileLink}} cursor="pointer" style="border-radius: 25px; width: 250px;">
-                </div>
-                <div class="Contentbox1">
-                    <h2 class="merit_name" id="jeet">{{x.username}}</h2>
-                    <div class="rank">
-                        <span class="merit_rank">#{{x.rank}}</span>
-                    </div>
-                    <div class="Points">
-                        <span class="merit_points">{{x.points}}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-        
-
-    </div>
-
-    <div class="Line2">
-
-
-        {%
-        for x in data["records"][3:]:
-
-        %}
-
-        <div class="Container2">
-            <div class="Card4">
-                <div class="img2">
-                    <img src={{x.profileLink}} cursor="pointer" style="width: 225px;">
-                </div>
-                <div class="Contentbox1">
-                    <h2 class="name">{{x.username}}</h2>
-                    <div class="rank">
-                        <span>#{{x.rank}}</span>
-                    </div>
-                    <div class="Points">
-                        <span class="spoint">{{x.points}}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        {% endfor %}
-        {% endblock %}
-
-    </div>
-
-    <!-- <script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script> -->
-    <!-- <script src="../static/script.js"></script> -->
-
-
-
-
-</body>
-
+    <div class="container"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
