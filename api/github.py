@@ -1,3 +1,4 @@
+from urllib import response
 import requests
 from typing import List
 
@@ -64,6 +65,7 @@ class Github:
                 f"Error {response.status_code}: {response.json()['message']}")
 
     def user(self, username: str) -> dict:
+        """Fetches github user details of the provided username."""
         url = f"{self.url}users/{username}"
 
         user_info = {}
@@ -83,6 +85,7 @@ class Github:
                 f"Error {response.status_code}: {response.json()['message']}")
 
     def repo(self, repo: str) -> dict:
+        """Fetches details of the provided username."""
         url = f"{self.url}repos/{repo}"
 
         repo_info = {}
@@ -98,6 +101,31 @@ class Github:
             raise RuntimeError(
                 f"Error {response.status_code}: {response.json()['message']}")
 
+    def repo_list(self, org: str, tags: List[str] = None) -> List[str]:
+        url = f"{self.url}users/{org}/repos?per_page=100"
+
+        repos = []
+        page = 1
+
+        while True:
+            print("page", page)
+            response = requests.get(f"{url}&page={page}")
+            repo_data = response.json()
+            if repo_data == []:  # Terminate the loop if no data in the page
+                break
+            for repo in repo_data:
+                print(repo_data)
+                print(repo["tags_url"])
+                tags_url = repo["tags_url"].split("{")[0]
+                for tag in tags:
+                    if requests.get(f"{tags_url}/{tag.lower()}").status_code == 404:
+                        break
+                else:
+                    repos.append(repo["full_name"])
+                print(repos)
+        return repos
+
 
 if __name__ == "__main__":
+    print(Github().repo_list("GDSC-IIIT-Kalyani", ["hacktoberfest-accepted"]))
     pass
