@@ -1205,3 +1205,35 @@ video {
     font-size: 3rem;
   }
 }
+
+.column__StyledDiv-sc-rtwvj3-0 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+
+.card__StyledDiv-sc-wz4vg9-0 {
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
+  width: 30%;
+  height: 20%;
+  margin: 20px;
+}
+
+.card__StyledDiv-sc-wz4vg9-0 .heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card__StyledDiv-sc-wz4vg9-0 .heading h1 {
+  font-size: 2rem;
+  margin-left: 5%;
+}
+
+.card__StyledDiv-sc-wz4vg9-0 .content {
+  margin: 20px 0;
+}

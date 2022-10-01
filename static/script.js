@@ -1,9 +1,5 @@
 const marquee = document.querySelectorAll(".clipped-text");
-const gdsc = document.querySelectorAll(".gdsc");
-// const tl = gsap.timeline({ default: { duration: 0.75, ease: "power1.out" } });
 
-// tl.fromTo(".gdsc", { scale: 0 }, { scale: 1, duration: 1.5 });
-// console.log(marquee);
 // added event listener because it doesn't get the right width
 addEventListener("load", function () {
   marquee.forEach((el) => {
@@ -110,16 +106,4 @@ const interval = setInterval(function () {
   });
   rbinary.textContent = str;
 }, 1000);
-// clearInterval(interval); // thanks @Luca D'Amico
-// const tl = gsap.timeline({ default: { duration: 0.75, ease: "power1.out" } });
-// tl.fromTo(
-//   ".marquee_content_1",
-//   { x: 0 },
-//   { x: -100, ease: Linear.easeNone, duration: 1.5, yoyo: true }
-// );
 
-// https://codepen.io/lelamanolio/pen/ZEYRJJJ
-// Inspired by:
-// https://codepen.io/sgorneau/pen/mWEddP
-// as described in the above codepen, if we set the value `x` to something like -100% it'll go too fast
-// so I took the function to calculate the rate and applied to my code

@@ -1,0 +1,133 @@
+{
+    "records": [
+        {
+            "rank": 1,
+<<<<<<< HEAD
+            "username": "Jatin Verma",
+            "points": 95,
+            "profileLink": "https://github.com/jatinverma14.png"
+        },
+        {
+            "rank": 2,
+            "username": "Ayushman Bhatt",
+            "points": 45,
+            "profileLink": "https://github.com/Ayush0922.png"
+        },
+        {
+            "rank": 3,
+            "username": "Anmol Srivastava",
+            "points": 30,
+            "profileLink": "https://github.com/Anmol376OP.png"
+        },
+        {
+            "rank": 4,
+            "username": "Gaurav Singh",
+            "points": 20,
+            "profileLink": "https://github.com/GauravSingh9356.png"
+        },
+        {
+            "rank": 5,
+            "username": "Yashraj Singh",
+            "points": 15,
+            "profileLink": "https://github.com/yashraj-02-techie.png"
+        },
+        {
+            "rank": 6,
+            "username": null,
+            "points": 15,
+            "profileLink": "https://github.com/subhadeepchowdhury41.png"
+        },
+        {
+            "rank": 7,
+=======
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
+            "username": "SABYASACHI PAUL",
+            "points": 10,
+            "profileLink": "https://github.com/sabyasachi-894.png"
+        },
+        {
+<<<<<<< HEAD
+            "rank": 8,
+            "username": "Shubham Kumar",
+            "points": 10,
+            "profileLink": "https://github.com/matrixbot123.png"
+        },
+        {
+            "rank": 9,
+=======
+            "rank": 2,
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
+            "username": "Karl Mathias Moberg",
+            "points": 10,
+            "profileLink": "https://github.com/kmoberg.png"
+        },
+        {
+<<<<<<< HEAD
+            "rank": 10,
+            "username": "Anuj Kirodia",
+            "points": 10,
+            "profileLink": "https://github.com/anuj2801.png"
+        },
+        {
+            "rank": 11,
+            "username": "Ashish",
+            "points": 5,
+            "profileLink": "https://github.com/reactash.png"
+        },
+        {
+            "rank": 12,
+            "username": "Pavan kalyan C",
+            "points": 5,
+            "profileLink": "https://github.com/pavankalyan-codes.png"
+        },
+        {
+            "rank": 13,
+            "username": "Harshal Waghmare",
+            "points": 5,
+            "profileLink": "https://github.com/harshalw07.png"
+        },
+        {
+            "rank": 14,
+            "username": "Akshita Dixit",
+            "points": 5,
+            "profileLink": "https://github.com/akshitadixit.png"
+        },
+        {
+            "rank": 15,
+            "username": "Shashank Jaiswal",
+            "points": 5,
+            "profileLink": "https://github.com/ShashankJais128.png"
+        },
+        {
+            "rank": 16,
+            "username": "Janvi Raina",
+            "points": 5,
+            "profileLink": "https://github.com/JanviRaina.png"
+        },
+        {
+            "rank": 17,
+=======
+            "rank": 3,
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
+            "username": "Eddie Thokerunga",
+            "points": 5,
+            "profileLink": "https://github.com/Eddievin.png"
+        },
+        {
+            "rank": 18,
+            "username": "Dakota Brown",
+            "points": 5,
+<<<<<<< HEAD
+            "profileLink": "https://github.com/DKBoston15.png"
+        },
+        {
+            "rank": 19,
+            "username": "STAR SIWACH",
+            "points": 5,
+            "profileLink": "https://github.com/Ashwani132003.png"
+=======
+            "profileLink": "https://github.com/Anmol376OP.png"
+>>>>>>> c915b5bb109accb01859ee6e229df8f5619ddb91
+        }
+    ]
+}
