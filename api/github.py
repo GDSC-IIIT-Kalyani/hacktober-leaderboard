@@ -1,3 +1,4 @@
+from datetime import datetime
 from urllib import response
 import requests
 from requests.auth import HTTPBasicAuth
@@ -5,10 +6,9 @@ from typing import List
 
 
 class Github:
-    def __init__(self, user: str = None, password: str = None) -> None:
+    def __init__(self, token: str = None) -> None:
         self.url = "https://api.github.com/"
-        self.user = user
-        self.password = password
+        self.headers = {"Authorization": f"token {token}"}
 
     def pulls(self, repo: str, state: str = "all") -> List[dict]:
         """Fetches a list of pull requests with status state made on the provided repo.
@@ -48,11 +48,11 @@ class Github:
             raise ValueError(f"state: state must be one of {VALID_STATES}")
 
         url = f"{self.url}repos/{repo}/pulls?state={state}"
-        if self.user == self.password == None:
+        if self.headers == None:
             response = requests.get(url)
         else:
             response = requests.get(
-                url, auth=HTTPBasicAuth(self.user, self.password))
+                url, headers=self.headers)
 
         if response.ok:
             data = response.json()
@@ -63,6 +63,8 @@ class Github:
                 record["username"] = data[index]["user"]["login"]
                 record["labels"] = [label["name"]
                                     for label in data[index]["labels"]]
+                record["created_at"] = datetime.fromisoformat(
+                    data[index]["created_at"][:-1] + "+00:00")
 
                 data[index] = record
 
@@ -76,11 +78,11 @@ class Github:
         url = f"{self.url}users/{username}"
 
         user_info = {}
-        if self.user == self.password == None:
+        if self.headers == None:
             response = requests.get(url)
         else:
             response = requests.get(
-                url, auth=HTTPBasicAuth(self.user, self.password))
+                url, headers=self.headers)
 
         if response.ok:
             data = response.json()
@@ -100,11 +102,11 @@ class Github:
         url = f"{self.url}repos/{repo}"
 
         repo_info = {}
-        if self.user == self.password == None:
+        if self.headers == None:
             response = requests.get(url)
         else:
             response = requests.get(
-                url, auth=HTTPBasicAuth(self.user, self.password))
+                url, headers=self.headers)
 
         if response.ok:
             data = response.json()
@@ -120,32 +122,29 @@ class Github:
             raise RuntimeError(
                 f"Error {response.status_code}: {response.json()['message']}")
 
-    def repo_list(self, org: str, tags: List[str] = None) -> List[str]:
+    def repo_list(self, org: str, topics: List[str] = None) -> List[str]:
         url = f"{self.url}users/{org}/repos?per_page=100"
 
         repos = []
         page = 1
 
         while True:
-            if self.user == self.password == None:
+            if self.headers == None:
                 response = requests.get(f"{url}&page={page}")
             else:
                 response = requests.get(
-                    f"{url}&page={page}", auth=HTTPBasicAuth(self.user, self.password))
+                    f"{url}&page={page}", headers=self.headers)
             repo_data = response.json()
             if repo_data == []:  # Terminate the loop if no data in the page
                 break
             for repo in repo_data:
-                tags_url = repo["tags_url"].split("{")[0]
-                for tag in tags:
-                    if self.user == self.password == None:
-                        if requests.get(f"{tags_url}/{tag.lower()}").status_code == 404:
-                            break
-                    else:
-                        if requests.get(f"{tags_url}/{tag.lower()}",
-                                        auth=HTTPBasicAuth(self.user, self.password)).status_code == 404:
-                            break
+                topics_url = f"{self.url}repos/{repo['full_name']}/topics"
+                if self.headers == None:
+                    topics_data = requests.get(topics_url).json()["names"]
                 else:
+                    topics_data = requests.get(
+                        topics_url, headers=self.headers).json()['names']
+                if set(topics).issubset(set(topics_data)):
                     repos.append(repo["full_name"])
             page += 1
         return repos
