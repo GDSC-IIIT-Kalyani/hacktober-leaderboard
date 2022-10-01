@@ -6,10 +6,66 @@
     <link href="/static/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hacktober-Leaderboard</title>
     <style>
       /* * {
         outline: 1px solid red;
@@ -19,7 +75,7 @@
     </style>
   </head>
   <body class="bg-[#170F1E]">
-    <nav class="navbar sticky overflow-y-hidden h-4 w-screen">
+    <nav class="navbar sticky overflow-y-hidden h-4">
       <h1
         class="text-white whitespace-nowrap overflow-x-hidden text-xs rbinary opacity-20"
       >
@@ -34,65 +90,297 @@
     </nav>
     <div class="hero flex flex-col items-center justify-center">
       <img
-        class="w-[27rem] mt-[64px] gdsc"
+        class="w-[27rem] mt-[64px] gdsc md:w-[40rem]"
         src="/assets/Group 1.svg"
         alt="GDSC IIIT Kalyani logo"
       />
       <img
-        class="h-[20rem] w-[27rem]"
+        class="h-[20rem] w-[27rem] md:w-[35rem]"
         src="/assets/Logo-2-Color 1.svg"
         alt="hacktober-fest logo"
       />
     </div>
-    <div
-      class="hero-marquee text-white uppercase text-[90px] whitespace-nowrap overflow-hidden"
-    >
-      <div class="marquee overflow-hidden">
-        <span class="clipped-text ai"> Get in the repo, Hacker! </span>
-        <span class="clipped-text ai"> Get in the repo, Hacker! </span>
+    <div class="relative flex overflow-x-hidden text-white">
+      <div class="animate-marquee whitespace-nowrap uppercase">
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!
+        </span>
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
       </div>
-      <div class="marquee overflow-hidden">
-        <span class="clipped-text robotics"> launch sequence Initiated </span>
-        <span class="clipped-text robotics"> it's time to hack </span>
+
+      <div class="absolute animate-marquee2 whitespace-nowrap text uppercase">
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Get in the repo, Hackers!</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
       </div>
     </div>
-    <div class="flex flex-col items-center justify-center mt-[5rem]">
-      <img src="/assets/image 13.svg" alt="" />
-      <img class="mt-[3rem]" src="/assets/image 4.svg" alt="" />
-      <img class="mt-[5rem]" src="/assets/image 13.svg" alt="" />
+    <div class="relative flex overflow-x-hidden text-white">
+      <div class="animate-marqueeopp whitespace-nowrap uppercase">
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Launch Sequence initiated</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >It's time to hack</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Launch Sequence initiated</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >It's time to hack</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Launch Sequence initiated</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+      </div>
+
+      <div
+        class="absolute animate-marqueeopp2 whitespace-nowrap text uppercase"
+      >
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Launch Sequence initiated</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >It's time to hack</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Launch Sequence initiated</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >It's time to hack</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+
+        <span class="text-5xl md:text-9xl font-silkscreen font-bold mx-4"
+          >Launch Sequence initiated</span
+        >
+        <span class="dot font-silkscreen font-bold text-[5rem] md:text-[10rem]"
+          >•</span
+        >
+      </div>
     </div>
-    <div class="rank-board mx-[3rem] mb-[5rem] mt-[5rem]">
-      <div class="entry flex justify-between">
-        <h1 class="text-[60px] text-white">#1</h1>
-        <div class="h-[100px] w-[100px] bg-white rounded-lg">
+
+    <div class="flex flex-col items-center justify-center my-[5rem]">
+      <img
+        class="w-[24rem] md:w-[120rem]"
+        src="/assets/image 13.svg"
+        alt="margin-up"
+      />
+      <img
+        class="w-[23rem] md:w-[70rem]"
+        src="/assets/image 4.svg"
+        alt="leaderboard"
+      />
+      <img
+        class="w-[24rem] md:w-[120rem]"
+        src="/assets/image 13.svg"
+        alt="margin-down"
+      />
+    </div>
+    <div class="rank-board mx-[1rem] md:mx-[3rem] mb-[5rem] mt-[5rem]">
+      <div class="entry1 flex gap-[2rem] md:gap-[30rem]">
+        <h1 class="text-[30px] md:text-[60px] text-white">#1</h1>
+        <div
+          class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg"
+        >
           <img
-            class="h-[100px] w-[100px] rounded-lg translate-y-2 translate-x-2"
+            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
             src="/assets/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg"
             alt=""
           />
         </div>
         <div class="user">
-          <h2 class="username text-white text-[28px]">@sagamantus</h2>
-          <h3 class="full-name text-white text-[40px]">Sagar Mankoti</h3>
+          <h2 class="username text-white md:text-[28px]">@sagamantus</h2>
+          <h3 class="full-name text-white text-[20px] md:text-[40px]">
+            Sagar Mankoti
+          </h3>
         </div>
 
-        <h4 class="text-white points text-[28px] my-auto">420</h4>
+        <h4
+          class="text-white absolute right-[1rem] md:right-[7rem] points text-[20px] md:text-[28px] my-auto"
+        >
+          420
+        </h4>
+      </div>
+      <div class="entry2 flex gap-[2rem] md:gap-[30rem] mt-[3rem]">
+        <h1 class="text-[30px] md:text-[60px] text-white">#2</h1>
+        <div
+          class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg"
+        >
+          <img
+            class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
+            src="/assets/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg"
+            alt=""
+          />
+        </div>
+        <div class="user">
+          <h2 class="username text-white md:text-[28px]">@k3ys</h2>
+          <h3 class="full-name text-white text-[20px] md:text-[40px]">
+            Rishi Kumar
+          </h3>
+        </div>
+
+        <h4
+          class="absolute right-[1rem] md:right-[7rem] text-white points text-[20px] md:text-[28px] my-auto"
+        >
+          012
+        </h4>
       </div>
     </div>
-    <img class="mb-8 h-[10px]" src="/assets/Line 1.svg" alt="" />
+    <img class="mb-8 h-[10px]" src="/assets/Line 1.svg" alt="line" />
     <div class="projects flex flex-col mtb-[5rem] items-center justify-center">
-      <img src="/assets/image 11.svg" alt="" />
-      <img src="/assets/image 13.svg" alt="" />
-      
-    
+      <img
+        class="w-[23rem] md:w-[50rem]"
+        src="/assets/image 11.svg"
+        alt="projects-banner"
+      />
+      <img
+        class="w-[24rem] md:w-[110rem]"
+        src="/assets/image 13.svg"
+        alt="fancy-seperator"
+      />
     </div>
-    <div class="project-portfolio">
-
-      
+    <div
+      class="project-portfolio mx-[2rem] md:mx-[10rem] md:my-[5rem] flex flex-col md:flex-row justify-start md:justify-evenly mt-[5rem] mb-[8rem]"
+    >
+      <div
+        style="
+          background: linear-gradient(
+            rgb(124, 127, 255) 0%,
+            rgb(64, 221, 255) 100%
+          );
+          border: 4px solid rgb(64, 221, 255);
+          box-shadow: rgb(64 221 255) 0px 0px 12px;
+          border-radius: 24px;
+        "
+        class="project-1 relative md:min-h-[354px] md:min-w-[304px] w-[20rem] md:w-full mx-auto md:ml-[8rem] rounded-lg bg-white px-[40px] py-[48px]"
+      >
+        <h1
+          class="text-[2.3rem] md:text-[3rem] text-center uppercase font-bold"
+        >
+          Project 1
+        </h1>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          molestiae esse eos cupiditate, harum iusto sunt consectetur saepe. .
+        </p>
+        <a class="absolute bottom-0 md:bottom-[3rem] md:left-[7rem]" href="#">
+          <i class="fa fa-brands fa-github fa-3x"></i>
+        </a>
+      </div>
+      <div
+        style="
+          background: linear-gradient(
+            rgb(64, 221, 255) 0%,
+            rgb(124, 127, 255) 100%
+          );
+          border: 4px solid rgb(124, 127, 255);
+          box-shadow: rgb(124, 127, 255) 0px 0px 12px;
+          border-radius: 24px;
+        "
+        class="project-2 mt-[1.5rem] relative md:min-h-[354px] md:min-w-[304px] w-[20rem] md:w-full mx-auto md:ml-[8rem] rounded-lg bg-white px-[40px] py-[48px]"
+      >
+        <h1
+          class="text-[2.3rem] md:text-[3rem] text-center uppercase font-bold"
+        >
+          Project 2
+        </h1>
+        <p class="text-center">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis
+          molestiae esse eos cupiditate, harum iusto sunt consectetur saepe.z
+        </p>
+        <a class="absolute bottom-0 md:bottom-[3rem] md:left-[7rem]" href="#">
+          <i class="fa fa-brands fa-github fa-3x"></i>
+        </a>
+      </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="/static/script.js"></script>
   </body>
 </html>
-<!-- • -->
