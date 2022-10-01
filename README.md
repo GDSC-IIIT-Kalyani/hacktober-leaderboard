@@ -1,6 +1,6 @@
 # Hacktober-Leaderboard 🚀
 
-### Leaderboard for hacktoberfest 2021
+### Leaderboard for hacktoberfest 2022
 
 # Setup and installation instructions
 
