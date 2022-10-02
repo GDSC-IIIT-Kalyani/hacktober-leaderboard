@@ -21,7 +21,7 @@ app = Flask(__name__)
 # Info to edit for 2022:
 label_for_hacktober_2022 = "hacktoberfest"
 label_accepted_pull = "hacktoberfest-accepted"
-event_starting_date = datetime(2021, 10, 1)
+event_starting_date = datetime(2022, 10, 1)
 
 levels = {"level-1" : 5, "level-2": 10, "level-3" : 20, "Level-1" : 5, "Level-2": 10, "Level-3" : 20}
 
@@ -33,7 +33,8 @@ all_repos = ['GDSC-IIIT-Kalyani/CogniWapp', 'GDSC-IIIT-Kalyani/Eagle-AI-GUI', 'G
 def func():
     # Accessing main github page of GDSC-IIIT-KALYANI:
     # g = Github("github_token")
-    g = Github("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")
+	# g = Github("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")
+    g = Github("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")
     org = g.get_organization("GDSC-IIIT-Kalyani")
     org.login
 
@@ -95,7 +96,7 @@ def func():
             user["rank"] = rank
             user["username"] = i[0]
             user["points"] = -i[1]
-            user["profilelink"] = i[2]
+            user["profileLink"] = i[2]
             data['records'].append(user)
             user = {}
             rank+=1

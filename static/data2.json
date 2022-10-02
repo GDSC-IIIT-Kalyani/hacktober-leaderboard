@@ -2,105 +2,33 @@
     "records": [
         {
             "rank": 1,
-            "username": "Jatin Verma",
-            "points": 140,
-            "profilelink": "https://github.com/jatinverma14.png"
+            "username": "Akshita Dixit",
+            "points": 10,
+            "profileLink": "https://github.com/akshitadixit.png"
         },
         {
             "rank": 2,
-            "username": "Vineel Sai",
-            "points": 40,
-            "profilelink": "https://github.com/vineelsai26.png"
+            "username": "Oindrila Das",
+            "points": 0,
+            "profileLink": "https://github.com/OindrilaDas27.png"
         },
         {
             "rank": 3,
-            "username": "Anmol Srivastava",
-            "points": 25,
-            "profilelink": "https://github.com/Anmol376OP.png"
+            "username": "Sayan Karmakar",
+            "points": 0,
+            "profileLink": "https://github.com/ProPython007.png"
         },
         {
             "rank": 4,
-            "username": "Suryansh Omar",
-            "points": 20,
-            "profilelink": "https://github.com/Suryanshomar7240.png"
+            "username": "Rishi Kumar",
+            "points": 0,
+            "profileLink": "https://github.com/k3yss.png"
         },
         {
             "rank": 5,
-            "username": "SABYASACHI PAUL",
-            "points": 20,
-            "profilelink": "https://github.com/sabyasachi-894.png"
-        },
-        {
-            "rank": 6,
-            "username": "Karl Mathias Moberg",
-            "points": 10,
-            "profilelink": "https://github.com/kmoberg.png"
-        },
-        {
-            "rank": 7,
-            "username": "Pallav Saxena",
-            "points": 10,
-            "profilelink": "https://github.com/paxF3E.png"
-        },
-        {
-            "rank": 8,
-            "username": "STAR SIWACH",
-            "points": 5,
-            "profilelink": "https://github.com/Ashwani132003.png"
-        },
-        {
-            "rank": 9,
-            "username": "Dakota Brown",
-            "points": 5,
-            "profilelink": "https://github.com/DKBoston15.png"
-        },
-        {
-            "rank": 10,
-            "username": "Eddie Thokerunga",
-            "points": 5,
-            "profilelink": "https://github.com/Eddievin.png"
-        },
-        {
-            "rank": 11,
-            "username": "Vikas",
-            "points": 5,
-            "profilelink": "https://github.com/VIKAS0264.png"
-        },
-        {
-            "rank": 12,
-            "username": "Yashraj Singh",
-            "points": 5,
-            "profilelink": "https://github.com/shrooot.png"
-        },
-        {
-            "rank": 13,
-            "username": "Sarvesh Limaye",
-            "points": 0,
-            "profilelink": "https://github.com/SarveshLimaye.png"
-        },
-        {
-            "rank": 14,
-            "username": "Divya",
-            "points": 0,
-            "profilelink": "https://github.com/dkk3675.png"
-        },
-        {
-            "rank": 15,
-            "username": "Rishi Kumar",
-            "points": 0,
-            "profilelink": "https://github.com/k3yss.png"
-        },
-        {
-            "rank": 16,
             "username": "Sagar Mankoti",
             "points": 0,
-            "profilelink": "https://github.com/sagamantus.png"
-        },
-        {
-            "rank": 17,
-            "username": "Subhadeep Chowdhury",
-            "points": 0,
-            "profilelink": "https://github.com/subhadeepchowdhury41.png"
+            "profileLink": "https://github.com/sagamantus.png"
         }
     ]
 }

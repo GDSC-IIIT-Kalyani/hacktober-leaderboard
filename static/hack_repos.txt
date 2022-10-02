@@ -1,1 +1,0 @@
-['GDSC-IIIT-Kalyani/FUSION_VAE_DSC', 'GDSC-IIIT-Kalyani/hacktober-leaderboard', 'GDSC-IIIT-Kalyani/MediCare-Prime', 'GDSC-IIIT-Kalyani/Winter-of-Code-2.0-frontend', 'GDSC-IIIT-Kalyani/WOC-certificate-generator-Hactoberfest2021']
