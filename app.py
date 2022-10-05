@@ -65,13 +65,13 @@ def func():
                     else:
                         # Making a nested list (ranks):
                         # ranks = [['uname', '-score', 'img_url', 'first_pull_req_date&time'], ...] (-score would be taken care of later)
-                        ranks.append([pr.user.name, -score, "https://github.com/"+pr.user.login+".png", pr.created_at])
+                        ranks.append([pr.user.name, -score, "https://github.com/"+pr.user.login+".png", pr.user.login, pr.created_at])
                         done_users.append(pr.user.name)
             else:
                 break
    
     # Sorting rank according to the score then the date & time of first pull req. per user:
-    ranks = sorted(ranks, key=itemgetter(1, 2), reverse=True)
+    ranks = sorted(ranks, key=itemgetter(1, 4), reverse=True)
     ranks = ranks[::-1]
     # print(ranks)
 
@@ -86,6 +86,7 @@ def func():
         user["username"] = i[0]
         user["points"] = -i[1]
         user["profileLink"] = i[2]
+        user["full_name"] = i[3]
         data['records'].append(user)
         user = {}
         rank+=1
@@ -97,15 +98,7 @@ data = func()
 # URL routings:
 @app.route("/")
 def start():
-    return render_template("index.html")
-
-@app.route("/leaderboard") #leaderboard
-def hello_world():
-    return render_template("leaderboard.html", data=data)
-    
-@app.route("/projects")
-def hello_projec():
-    return render_template("projects.html")
+    return render_template("lb.html", data=data)
   
 
 # Main:
