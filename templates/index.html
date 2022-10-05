@@ -1,75 +1,342 @@
+<!DOCTYPE html>
 <html>
-
-<head>
-    <title>Hacktoberfest Leaderboard</title>
-    <link rel="shortcut icon" type="image/jpg" href="../img/gdsc.png" />
-    <style>
-        /* .logo {
-            height: 25px;
-            line-height: 25px;
-            vertical-align: middle;
-        } */
-        
-        .button2 {
-            background-color: #2b3531;
-            /* Green */
-            border: none;
-            border-radius: 5%;
-            color: white;
-            padding: 15px 32px;
-            margin: 1%;
-            vertical-align: top;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-        
-        .rotate180 {
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-        }
-        
-        .button2:hover {
-            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-
-    <div style="background-color:#2b3531;color:white;padding:9px;">
-        <center>
-            <h1>Hacktoberfest 2021</h1>
-        </center>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../static/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap"
+    rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/assets/favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/assets/favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/assets/favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/assets/favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/assets/favicon/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Hacktober-Leaderboard</title>
+    
+  </head>
+  
+  <!--Marquee binary digits on the navbar area-->
+  <body class="bg-[#170F1E]">
+    <nav class="navbar sticky overflow-y-hidden h-4" style="margin-top: 1%;">
+      <h1 class="text-white whitespace-nowrap overflow-x-hidden text-xs rbinary opacity-20" style="color: #fff;font-size: 1.25rem;">
+        00100100 00110001 00010100 00001110 00000111 00010100 00100010 00100001
+        00001011 00011010 00011101 00010001 00000111 00101000 00010110 00000011
+        00010011 00011010 00011101 00110010 00001111 00101011 00001100 00011010
+        00000010 00001000 00100110 00101011 00110010 00011101 11100100 00101101
+        11100100 00000001 00100001 00010110 00010001 00110000 00000011 00001111
+        00010100 00100101 00001010 00011100 00000001 00101111 00110010 00101001
+        00010110 00000100
+      </h1>
+    </nav>
+    
+    <!--GDSC IIIT Kalyani and Hacktober Fest logo-->
+    <div class="hero flex flex-col items-center justify-center">
+      <img class="w-[27rem] mt-[64px] gdsc md:w-[40rem]" src="/assets/Group 1.svg" alt="GDSC IIIT Kalyani logo" />
+      <img class="h-[20rem] w-[27rem] md:w-[35rem]" src="/assets/Logo-2-Color 1.svg" alt="hacktober-fest logo" />
+    </div>
+  
+    <!--Marquee slogan-->
+    <div class="relative flex overflow-x-hidden text-white">
+      <!--First line-->
+      <div class="animate-marquee whitespace-nowrap uppercase" style="font-family: 'Alfa Slab One'; font-weight: 200;">
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+      </div>
+  
+      <div class="absolute animate-marquee2 whitespace-nowrap text uppercase"
+        style="font-family: 'Alfa Slab One'; font-weight: 200;">
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Get in the repo, Hackers!</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+      </div>
+    </div>
+  
+    <!--Second Line-->
+    <div class="relative flex overflow-x-hidden text-white" style="font-family: 'Alfa Slab One'; font-weight: 200;">
+      <div class="animate-marqueeopp whitespace-nowrap uppercase">
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Launch Sequence initiated</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">It's time to hack</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Launch Sequence initiated</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">It's time to hack</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Launch Sequence initiated</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+      </div>
+  
+      <div class="absolute animate-marqueeopp2 whitespace-nowrap text uppercase">
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Launch Sequence initiated</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">It's time to hack</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Launch Sequence initiated</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">It's time to hack</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+  
+        <span class="text-5xl md:text-9xl font-Alfa Slab One font-500 mx-4">Launch Sequence initiated</span>
+        <span class="dot font-Alfa Slab One font-500 text-[5rem] md:text-[10rem]">•</span>
+      </div>
+    </div>
+  
+    <!--Hacktober leaderboard begins here-->
+    <div class="flex flex-col items-center justify-center my-[5rem]">
+      <img class="w-[24rem] md:w-[120rem]" src="/assets/image 13.svg" alt="margin-up" />
+      <img class="w-[23rem] md:w-[70rem]" src="/assets/image 4.svg" alt="leaderboard" />
+      <img class="w-[24rem] md:w-[120rem]" src="/assets/image 13.svg" alt="margin-down" />
+    </div>
+    
+    <!--Rankboard-->
+    <div class="rank-board">
+      <div class="entry flex gap-[2rem] md:gap-[30rem]">
+        <h1 class="text-[30px] md:text-[60px] text-white">#1</h1>
+        <div class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg">
+          <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
+            src="/assets/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg" alt="" />
+        </div>
+  
+        <div class="user">
+          <h2 class="username text-white md:text-[28px]">@sagamantus</h2>
+          <h3 class="full-name text-white text-[20px] md:text-[40px]">
+            Sagar Mankoti
+          </h3>
+  
+        <h4 class="text-white absolute right-[1rem] md:right-[7rem] points text-[20px] md:text-[28px] my-auto">
+          420
+        </h4>
+      </div>
     </div>
 
-    <div style="background-color:#f54700;color:white;padding:20px;">
-        <center><img src="https://hacktoberfest.digitalocean.com/_nuxt/img/H-icon-dark.bff3672.svg" ; height="400px" ; width="400px"></center>
-        <center>
-            <h1>Google Developer Student Clubs</h1>
-            <h1>Indian Institute of Information Technology Kalyani</h1>
-        </center>
-
-        <center>
-            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px">
-            <a href="/leaderboard"><button class = "button2" href="/leaderboard" vertical-align="center">Leaderboard</button></a>
-            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px" ; class="rotate180">
-            <br>
-            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px">
-            <a href='/projects'><button class = "button2">Projects</button></a>
-            <img src="https://hacktoberfest.digitalocean.com/_nuxt/img/sign-up-accent-left.07ab168.svg" height="100px" ; width="120px" ; class="rotate180">
-        </center>
+  
+      <div class="entry flex gap-[2rem] md:gap-[30rem]">
+        <h1 class="text-[30px] md:text-[60px] text-white">#2</h1>
+        <div class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg">
+          <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
+            src="/assets/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg" alt="" />
+        </div>
+  
+        <div class="user">
+          <h2 class="username text-white md:text-[28px]">@k3ys</h2>
+          <h3 class="full-name text-white text-[20px] md:text-[40px]">
+            Rishi Kumar
+          </h3>
+  
+        <h4 class="absolute right-[1rem] md:right-[7rem] text-white points text-[20px] md:text-[28px] my-auto">
+          012
+        </h4>
+      </div>
     </div>
+</div>
 
-    <div style="background-color:#2b3531;color:white;padding:0px;"></div>
-
-
-</body>
-
-</html>
+  
+    <img class="mb-8 h-[10px]" src="/assets/Line 1.svg" alt="line" />
+  
+    <!--Project section beigns here-->
+    <div class="projects flex flex-col mtb-[5rem] items-center justify-center">
+      <img class="w-[23rem] md:w-[50rem]" src="/assets/image 11.svg" alt="projects-banner" />
+      <img class="w-[24rem] md:w-[110rem]" src="/assets/image 13.svg" alt="fancy-seperator" />
+    </div>
+  
+    <!--Hacktober project cards-->
+    <div class="card">
+      <div class="column__StyledDiv-sc-rtwvj3-0 WeEZK">
+        <div class="card__StyledDiv-sc-wz4vg9-0 card__MainWrapper-sc-wz4vg9-1 kEfnJk kydKZM">
+          <div class="heading">
+            <img src="" style="position: relative;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background: white;">
+            <h1>Project Name</h1>
+          </div>
+          <div class="content">
+            <p>
+              Project detail goes here.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card__StyledDiv-sc-wz4vg9-0 card__MainWrapper-sc-wz4vg9-1 kEfnJk kydKZM"
+          style="background: linear-gradient(0deg, #7C7FFF 0%, #40DDFF 100%); border-color: #7C7FFF; ">
+          <div class="heading">
+            <img src="" style="position: relative;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background: white;">
+            <h1>Project Name</h1>
+          </div>
+          <div class="content">
+            <p>
+              Project detail goes here.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card__StyledDiv-sc-wz4vg9-0 card__MainWrapper-sc-wz4vg9-1 kEfnJk kydKZM">
+          <div class="heading">
+            <img src="" style="position: relative;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background: white;">
+            <h1>Project Name</h1>
+          </div>
+          <div class="content">
+            <p>
+              Project detail goes here.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card__StyledDiv-sc-wz4vg9-0 card__MainWrapper-sc-wz4vg9-1 kEfnJk kydKZM"
+          style="background: linear-gradient(0deg, #7C7FFF 0%, #40DDFF 100%); border-color: #7C7FFF; ">
+          <div class="heading">
+            <img src="" style="position: relative;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background: white;">
+            <h1>Project Name</h1>
+          </div>
+          <div class="content">
+            <p>
+              Project detail goes here.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card__StyledDiv-sc-wz4vg9-0 card__MainWrapper-sc-wz4vg9-1 kEfnJk kydKZM">
+          <div class="heading">
+            <img src="" style="position: relative;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background: white;">
+            <h1>Project Name</h1>
+          </div>
+          <div class="content">
+            <p>
+              Project detail goes here.
+            </p>
+          </div>
+        </div>
+  
+        <div class="card__StyledDiv-sc-wz4vg9-0 card__MainWrapper-sc-wz4vg9-1 kEfnJk kydKZM"
+          style="background: linear-gradient(0deg, #7C7FFF 0%, #40DDFF 100%); border-color: #7C7FFF; ">
+          <div class="heading">
+            <img src="" style="position: relative;
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                                overflow: hidden;
+                                background: white;">
+            <h1>Project Name</h1>
+          </div>
+          <div class="content">
+            <p>
+              Project detail goes here.
+            </p>
+          </div>
+        </div>
+    </div>
+    </div>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script src="/static/script.js"></script>
+  </body>
+  
+  </html>
