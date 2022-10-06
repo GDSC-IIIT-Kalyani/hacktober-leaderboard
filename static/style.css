@@ -2945,6 +2945,12 @@ video {
   
       /*!sc*/
       .kydKZM {
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+        width: 30%;
+        height: 20%;
+        margin: 20px;
         background: linear-gradient(180deg, #7C7FFF 0%, #40DDFF 100%);
         border: 4px solid #40DDFF;
         border-radius: 24px;
@@ -3037,21 +3043,28 @@ video {
         width: 100... (32 KB left);
       }
 
-.column__StyledDiv-sc-rtwvj3-0 {
+      .WeEZK {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 5% 0;
+      }
+
+/* .column__StyledDiv-sc-rtwvj3-0 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   margin: 5% 0;
-}
+} */
 
-.card__StyledDiv-sc-wz4vg9-0 {
+/* .card__StyledDiv-sc-wz4vg9-0 {
   display: flex;
   flex-direction: column;
   overflow:hidden;
   width: 30%;
   height: 20%;
   margin: 20px;
-}
+} */
 
 .card__StyledDiv-sc-wz4vg9-0 .heading {
   display: flex;
