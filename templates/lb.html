@@ -3,52 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../static/style.css" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&display=swap"
     rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ url_for('static', filename='assets/favicon/apple-icon-57x57.png') }}" />
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ url_for('static', filename='assets/favicon/apple-icon-60x60.png') }}" />
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ url_for('static', filename='assets/favicon/apple-icon-72x72.png') }}" />
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static', filename='assets/favicon/apple-icon-76x76.png') }}" />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="/assets/favicon/apple-icon-114x114.png"
+      href="{{ url_for('static', filename='assets/favicon/apple-icon-114x114.png') }}"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="/assets/favicon/apple-icon-120x120.png"
+      href="{{ url_for('static', filename='assets/favicon/apple-icon-120x120.png') }}"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="/assets/favicon/apple-icon-144x144.png"
+      href="{{ url_for('static', filename='assets/favicon/apple-icon-114x114.png') }}"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/assets/favicon/apple-icon-152x152.png"
+      href="{{ url_for('static', filename='assets/favicon/apple-icon-152x152.png') }}"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/favicon/apple-icon-180x180.png"
+      href="{{ url_for('static', filename='assets/favicon/apple-icon-180x180.png') }}"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/assets/favicon/android-icon-192x192.png"
+      href="{{ url_for('static', filename='assets/favicon/apple-icon-192x192.png') }}"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/assets/favicon/manifest.json" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/favicon/favicon-32x32.png') }}" />
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ url_for('static', filename='assets/favicon/favicon-96x96.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/favicon/favicon-16x16.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='assets/favicon/manifest.json') }}" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png" />
+    <meta name="msapplication-TileImage" content="{{ url_for('static', filename='assets/favicon/ms-icon-144x144.png') }}" />
     <meta name="theme-color" content="#ffffff" />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
@@ -87,8 +87,8 @@
     
     <!--GDSC IIIT Kalyani and Hacktober Fest logo-->
     <div class="hero flex flex-col items-center justify-center">
-      <img class="w-[27rem] mt-[64px] gdsc md:w-[40rem]" src="/assets/Group 1.svg" alt="GDSC IIIT Kalyani logo" />
-      <img class="h-[20rem] w-[27rem] md:w-[35rem]" src="/assets/Logo-2-Color 1.svg" alt="hacktober-fest logo" />
+      <img class="w-[27rem] mt-[64px] gdsc md:w-[40rem]" src="{{ url_for('static', filename='assets/Group 1.svg') }}" alt="GDSC IIIT Kalyani logo" />
+      <img class="h-[20rem] w-[27rem] md:w-[35rem]" src="{{ url_for('static', filename='assets/Logo-2-Color 1.svg') }}" alt="hacktober-fest logo" />
     </div>
   
     <!--Marquee slogan-->
@@ -169,60 +169,42 @@
   
     <!--Hacktober leaderboard begins here-->
     <div class="flex flex-col items-center justify-center my-[5rem]">
-      <img class="w-[24rem] md:w-[120rem]" src="/assets/image 13.svg" alt="margin-up" />
-      <img class="w-[23rem] md:w-[70rem]" src="/assets/image 4.svg" alt="leaderboard" />
-      <img class="w-[24rem] md:w-[120rem]" src="/assets/image 13.svg" alt="margin-down" />
+      <img class="w-[24rem] md:w-[120rem]" src="{{ url_for('static', filename='assets/image 13.svg') }}" alt="margin-up" />
+      <img class="w-[23rem] md:w-[70rem]" src="{{ url_for('static', filename='assets/image 4.svg') }}" alt="leaderboard" />
+      <img class="w-[24rem] md:w-[120rem]" src="{{ url_for('static', filename='assets/image 13.svg') }}" alt="margin-down" />
     </div>
     
     <!--Rankboard-->
-    <div class="rank-board">
-      <div class="entry flex gap-[2rem] md:gap-[30rem]">
-        <h1 class="text-[30px] md:text-[60px] text-white">#1</h1>
-        <div class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg">
-          <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
-            src="/assets/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg" alt="" />
+    {% for x in data["records"] %}
+      <div class="rank-board">
+        <div class="entry flex gap-[2rem] md:gap-[30rem] mt-[3rem]">
+          <h1 class="text-[30px] md:text-[60px] text-white">#{{ x.rank }}</h1>
+          <div class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg">
+            <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
+              src="{{ x.profileLink }}" alt="" />
+          </div>
+    
+          <div class="user">
+            <h2 class="username text-white md:text-[28px]">{{ x.username }}</h2>
+            <h3 class="full-name text-white text-[20px] md:text-[40px]">
+              {{x.full_name}}
+            </h3>
+    
+            <h4 class="text-white absolute right-[1rem] md:right-[7rem] points text-[20px] md:text-[28px] my-auto">
+              {{ x.points }}
+            </h4>
+          </div>
         </div>
-  
-        <div class="user">
-          <h2 class="username text-white md:text-[28px]">@sagamantus</h2>
-          <h3 class="full-name text-white text-[20px] md:text-[40px]">
-            Sagar Mankoti
-          </h3>
-  
-        <h4 class="text-white absolute right-[1rem] md:right-[7rem] points text-[20px] md:text-[28px] my-auto">
-          420
-        </h4>
       </div>
-    </div>
+    {% endfor %}
 
   
-      <div class="entry flex gap-[2rem] md:gap-[30rem]">
-        <h1 class="text-[30px] md:text-[60px] text-white">#2</h1>
-        <div class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg">
-          <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
-            src="/assets/nathan-van-egmond-0IwypLLbHiA-unsplash.jpg" alt="" />
-        </div>
-  
-        <div class="user">
-          <h2 class="username text-white md:text-[28px]">@k3ys</h2>
-          <h3 class="full-name text-white text-[20px] md:text-[40px]">
-            Rishi Kumar
-          </h3>
-  
-        <h4 class="absolute right-[1rem] md:right-[7rem] text-white points text-[20px] md:text-[28px] my-auto">
-          012
-        </h4>
-      </div>
-    </div>
-</div>
-
-  
-    <img class="mb-8 h-[10px]" src="/assets/Line 1.svg" alt="line" />
+    <img class="mb-8 h-[10px]" src="{{ url_for('static', filename='assets/Line 1.svg') }}" alt="line" />
   
     <!--Project section beigns here-->
     <div class="projects flex flex-col mtb-[5rem] items-center justify-center">
-      <img class="w-[23rem] md:w-[50rem]" src="/assets/image 11.svg" alt="projects-banner" />
-      <img class="w-[24rem] md:w-[110rem]" src="/assets/image 13.svg" alt="fancy-seperator" />
+      <img class="w-[23rem] md:w-[50rem]" src="{{ url_for('static', filename='assets/image 11.svg') }}" alt="projects-banner" />
+      <img class="w-[24rem] md:w-[110rem]" src="{{ url_for('static', filename='assets/image 13.svg') }}" alt="fancy-seperator" />
     </div>
   
     <!--Hacktober project cards-->
@@ -342,7 +324,7 @@
     </div>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
-    <script src="/static/script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
   
   </html>
