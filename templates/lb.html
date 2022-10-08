@@ -179,8 +179,10 @@
         <div class="entry flex gap-[2rem] md:gap-[30rem] mt-[3rem]">
           <h1 class="text-[30px] md:text-[60px] text-white">#{{ x.rank }}</h1>
           <div class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] bg-white rounded-lg">
-            <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
+            <a href="{{ x.profilepage }}">
+              <img class="h-[50px] w-[50px] md:h-[100px] md:w-[100px] rounded-lg translate-y-2 translate-x-2"
               src="{{ x.profileLink }}" alt="" />
+            </a>
           </div>
     
           <div class="user">
