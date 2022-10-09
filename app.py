@@ -87,6 +87,7 @@ def func():
         user["points"] = -i[1]
         user["profileLink"] = i[2]
         user["full_name"] = i[3]
+        user["profilepage"]=i[2][:-4]
         data['records'].append(user)
         user = {}
         rank+=1
