@@ -790,6 +790,18 @@ video {
   min-height: 354px;
 }
 
+.w-\[10rem\] {
+  width: 10rem;
+}
+
+.w-\[15rem\] {
+  width: 15rem;
+}
+
+.w-\[17rem\] {
+  width: 17rem;
+}
+
 .w-\[27rem\] {
   width: 27rem;
 }

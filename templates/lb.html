@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='footer.css') }}" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -350,6 +351,27 @@
         </div>
     </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="custom-footer">
+      <div class="container">
+        <div class="col">
+          <img class="h-[10rem] w-[10rem] md:w-[10rem]" src="{{ url_for('static', filename='assets/Logo-2-Color 1.svg') }}" alt="hacktober-fest logo" />
+        </div>
+        <div class="col">
+          <div class="custom-socials">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//hacktober-fest-leaderboard.herokuapp.com/" target="_blank" rel="nofollow noreferrer" class="custom-social facebook"><span class="fa fa-facebook-f"></span></a>
+            <a href="https://twitter.com/intent/tweet?text=Hacktoberfest%20is%20for%20everyone.%20Check%20out%20the%20leaderboard%20%0Ahttps%3A//hacktober-fest-leaderboard.herokuapp.com/" target="_blank" rel="nofollow noreferrer" class="custom-social twitter"><span class="fa fa-twitter"></span></a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//hacktober-fest-leaderboard.herokuapp.com/&title=Hacktoberfest%20is%20for%20everyone&summary=Hacktoberfest%20is%20for%20everyone.%20Check%20out%20the%20leaderboard&source=" target="_blank" rel="nofollow noreferrer" class="custom-social linkedin"><span class="fa fa-linkedin"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-sub-footer">
+        <div class="container">
+          Copyright &copy; 2022 All rights reserved by<a href="https://github.com/paxF3E" target="_blank" rel="noreferrer nofollow">&nbsp;Pallav Saxena</a>.
+        </div>
+      </div>
+    </footer>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
     <script src="{{ url_for('static', filename='script.js') }}"></script>
