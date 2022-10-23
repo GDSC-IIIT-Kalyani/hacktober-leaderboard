@@ -28,11 +28,18 @@ org.login
 
 
 hack_repos = []   # This list will contain all the hackable 2022 repos name
-for repo in org.get_repos():
-    labels = repo.get_labels()
-
-    if label_for_hacktober_2022 in [label.name for label in labels]:
-        hack_repos.append(repo)
+# for repo in org.get_repos():
+#     labels = repo.get_labels()
+#
+#     if label_for_hacktober_2022 in [label.name for label in labels]:
+#         hack_repos.append(repo)
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/hacktobot"))
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/Doggo-run"))
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/Typing-Speed-Test"))
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/react-star-match"))
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/Plot"))
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/Face-Recognition"))
+hack_repos.append(g.get_repo("GDSC-IIIT-Kalyani/hacktober-leaderboard"))
 
 
 # Main loop function:
@@ -42,13 +49,13 @@ def func():
     done_users = []
     for repo in hack_repos:
         pulls = repo.get_pulls(state='closed', sort="created", direction='desc')   # getting all the closed pull requests
-        
+
         for pr in pulls:
             # Accepted pull reqs that are of current month:
             if pr.created_at > event_starting_date:
                 # print(repo, pr)
                 pr_labels = [label.name for label in pr.get_labels()]
-                
+
                 if label_accepted_pull in pr_labels:
                     score = 0
                     for k, v in levels.items():   # calculating score from the level dictionary
@@ -56,7 +63,7 @@ def func():
                             score = v
                     if score == 0:
                         continue
-                    
+
                     if pr.user.name in done_users:
                         for i in range(len(ranks)):
                             if ranks[i][0] == pr.user.name:
@@ -69,7 +76,7 @@ def func():
                         done_users.append(pr.user.name)
             else:
                 break
-   
+
     # Sorting rank according to the score then the date & time of first pull req. per user:
     ranks = sorted(ranks, key=itemgetter(1, 4), reverse=True)
     ranks = ranks[::-1]
@@ -80,7 +87,7 @@ def func():
     user = {}
     data = {}
     data['records'] = []
-    
+
     for i in ranks:
         user["rank"] = rank
         user["username"] = i[0]
@@ -100,7 +107,7 @@ data = func()
 @app.route("/")
 def start():
     return render_template("lb.html", data=data)
-  
+
 
 # Main:
 if __name__ == '__main__':
