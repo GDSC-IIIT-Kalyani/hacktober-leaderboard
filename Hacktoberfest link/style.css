@@ -1,0 +1,14 @@
+h1{
+    background-color: black;
+    text-align: center;
+    height: 100px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(168, 157, 157);
+}
