@@ -10,6 +10,17 @@ Create a new virtual environment so that you only install the dependencies that 
 - `source venv/bin/activate`
 - `pip install flask`
 - `flask run`
+# Steps to Contribute in the Repository
+
+1)**`Fork`** the repo.
+
+2)**`Create new file/directory`** for your project.
+
+3)**`Add`** relevant content to the directory.
+
+4)**`Create Pull request`** for the changes and click on **`Contribute`**.
+
+5)**`Wait`** for us to merge your PR, if we finds it okay.
 
 # Basic git functionalities 🔩
 
